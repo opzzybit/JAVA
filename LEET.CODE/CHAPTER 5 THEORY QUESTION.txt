@@ -1,0 +1,51 @@
+                                                                  CHAPTER 5 THEORY QUESTION ANSWERS
+                                                                  
+        [5.5]. Basic 4 element of counter control iteration 
+           
+           1. Control variable (loop counter).
+           2. Initial value.
+           3. Increment.
+           4. Loop continuation condition.
+           
+        [5.6].  Compare and contrast the "while" and "for" iteration statement 
+        
+        Ans:    the "for" iteration statement is a counter control statement ,
+                the "while" iteration statement is a sentinel control statement.
+                
+                THE COUNTER CONTROL STATEMENT control the number of times your loop 
+                will run before it stops.
+                THE SENTINEL CONTROL STATEMENT  is just like a key which when it opened the door 
+                way stop the loop from running.
+                
+        
+        [5.7].  If you need to execute the body of a loop at least  once, would it be better to use 
+              a do-while loop or a while loop   
+              
+        Ans:    I would use a while loop instead, rather than a do-while loop.          
+        
+        
+        
+        [5.8].  Compare and contrast the "break" and "continue" iteration statement
+        
+        Ans:    Break  statement when executed in a while ,for ,do-while ,or switch loop , it immediately exist the statement .
+        
+                Continue statement when executed in a while ,for ,do-while ,switch ,skips the remaining statement in the loop 
+                body and proceed with the next iteration of the loop.
+        
+        [5.9].  what error can you find 
+            
+            a.  There is no increment in the loop (i +, instead of i++).
+            b.  the condition "case value < 0 is not true , so it won't run because no number is lesser then zero
+            c.  the condition cannot be true so it won't run. because of the increment is positive instead of negative 
+            d.  the counter is not found .
+            
+       [5.10].  it would not run , because of the Scanner  s = new Scanner JDK can't see the symbol
+       
+       [5.19]. a. True
+               b. false
+               c. True
+               d. True
+               e. False
+               f. False
+               g. False
+       
