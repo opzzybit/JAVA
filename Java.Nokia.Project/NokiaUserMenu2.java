@@ -78,7 +78,7 @@ if (option == 00) {
 
 //CASE ONE END
 switch (option){
-        case 1 -> {
+        case "1" -> {
 boolean profileLoop = true;
 while (profileLoop && running) {
 String profile = """
@@ -114,7 +114,7 @@ if (phoneprofile == 00) {
 }
  
 switch (phoneprofile){
-    case 1 -> {
+    case "1" -> {
 String generalmode ="""
       GENERAL MODE
     
@@ -126,7 +126,7 @@ System.out.println(generalmode);
 }
 
 switch (phoneprofile){
-    case 2 -> {
+    case "2" -> {
 String silent ="""
       SILENT MODE
     
@@ -139,7 +139,7 @@ String silent ="""
 }
 
 switch (phoneprofile){
-    case 3 -> {
+    case "3" -> {
 String meeting ="""
       MEETING MODE
     
@@ -151,7 +151,7 @@ String meeting ="""
 }
 
 switch (phoneprofile){
-    case 4 -> {
+    case "4" -> {
 String outdoor ="""
       OUTDOOR MODE
     
@@ -164,7 +164,7 @@ String outdoor ="""
 }
 
 switch (phoneprofile){
-    case 5 -> {
+    case "5" -> {
 boolean customizeLoop = true;
 while (customizeLoop && running) {
 String customize ="""
@@ -190,19 +190,19 @@ if (customizevolume == 0) {
     break;
 }
 
- if (customizevolume== 1){
+ if (customizevolume== "1"){
      System.out.println("RINGTONE VOLUME INCREASED  !!!!!!");
     }
- if (customizevolume == 2){
+ if (customizevolume == "2"){
      System.out.println("KEYBOARD VOLUME INCREASED !!!!!!!");
     }
- if (customizevolume == 3){
+ if (customizevolume == "3"){
      System.out.println("RINGTONE VOLUME REDUCED !!!!!!!");
     }
- if (customizevolume == 4){
+ if (customizevolume == "4"){
      System.out.println("KEYBOARD VOLUME REDUCED !!!!!!! ");
     }
- if (customizevolume >= 5){
+ if (customizevolume >=  "5"){
      System.out.println("OPTION NOT FOUND  ");
     }
 }
@@ -216,7 +216,7 @@ if (customizevolume == 0) {
 
 //CASE TWO START
 switch (option){
-        case 2 -> {
+        case "2" -> {
 boolean phonebookLoop = true;
 while (phonebookLoop && running) {
 String phonebook = """
@@ -251,7 +251,7 @@ if (bookpage == 00) {
 
 
 switch(bookpage){
-     case 1 -> {
+     case "1" -> {
 String search ="""
             SEARCH
 abc....                        
@@ -273,7 +273,7 @@ bookpage2 += searchedname;
 }
 }
 switch(bookpage){
-     case 2 -> {
+     case "2" -> {
 String addname ="""
             ADD NAME 
 abc....                        
@@ -301,7 +301,7 @@ System.out.println("CONTACT SAVED");
 }
 }
 
-if (bookpage == 3){
+if (bookpage == "3"){
   System.out.println("""
             DELETE                     
   
@@ -312,7 +312,7 @@ if (bookpage == 3){
  """);
 }
 
-if (bookpage == 4){
+if (bookpage == "4"){
   System.out.println("""
             COPY NUMBER                        
   
@@ -323,7 +323,7 @@ if (bookpage == 4){
  """);
 }
 
-if (bookpage == 5){
+if (bookpage == "5"){
 boolean bookSettingsLoop = true;
 while (bookSettingsLoop && running) {
   System.out.println("""
@@ -346,7 +346,7 @@ if (booksettings == 0) {
 }
 
 
-if (booksettings == 1){
+if (booksettings == "1"){
 System.out.println("""
                       MEMORY SPECIFICATIONS
 
@@ -365,7 +365,7 @@ System.out.println("""
     """);
        }     
 
-if (booksettings  == 2){
+if (booksettings  == "2"){
 System.out.println("""
                        DISPLAY SPECIFIAATIONS
 
@@ -386,7 +386,7 @@ System.out.println("""
     """);
          }
 
-if (booksettings  == 3){
+if (booksettings  == "3"){
 System.out.println("""
                      NETWORK & DATA SPEED 
     • 2G Mobile Data: No GPRS or EDGE support. It relies on CSD (Circuit-Switched Data)
@@ -416,7 +416,7 @@ System.out.println("""
 // CASE THREE START 
 switch (option){
         
-        case 3-> {
+        case "3"-> {
 boolean callregisterLoop = true;
 while (callregisterLoop && running) {
 String callregister = """
@@ -448,13 +448,13 @@ if (register == 00) {
     break;
 }
 
-if (register  == 1){
+if (register  == "1"){
   System.out.println("EMPTY CONTACT !!!!!!!");
    }
-if (register == 2 ){
+if (register == "2" ){
    System.out.println("EMPTY CONTACT!!!!!!");
    }
-if (register  == 3){
+if (register  == "3"){
    System.out.println("EMPTY CONTACT !!!!!!");
    }
 }
@@ -466,7 +466,7 @@ if (register  == 3){
 // START OF CASE FOUR
 switch (option){
         
-        case 4-> {
+        case "4"-> {
 String chat = """
    ========CHAT========     
    
@@ -485,7 +485,7 @@ String chat = """
 
 // CASE FIVE START
 switch (option){
-      case 5-> {
+      case "5"-> {
 boolean messageLoop = true;
 while (messageLoop && running) {
 String message = """
@@ -521,22 +521,22 @@ if (phonemessage == 00) {
 }
 
 System.out.println();
-if (phonemessage == 1){
+if (phonemessage == "1"){
   System.out.println("NO SIM TO MOVE FURTHER !!!!!!!");
    }
-if (phonemessage == 2 ){
+if (phonemessage == "2" ){
    System.out.println("EMPTY INBOX !!!!!!!!");
    }
-if (phonemessage == 3){
+if (phonemessage == "3"){
    System.out.println("EMPTY OUTBOX !!!!!!!!");
    }
-if (phonemessage == 4){
+if (phonemessage == "4"){
    System.out.println("NO ITEM UNTIL THERE IS SIM !!!!!!!!!!!");
    }
-if (phonemessage== 5){
+if (phonemessage== "5"){
    System.out.println("EMPTY DRAFT  !!!!!!");
    }
-if (phonemessage>= 6){
+if (phonemessage>=  "6"){
    System.out.println("NO PICTURE MESSAGE YET  !!!!!!");
    }
 }
@@ -548,7 +548,7 @@ if (phonemessage>= 6){
 
 //CASE SIX START
 switch (option){
-        case 6 -> {
+        case "6" -> {
 boolean calldivertLoop = true;
 while (calldivertLoop && running) {
 String calldivert = """
@@ -582,22 +582,22 @@ if (divert == 00) {
 }
 
 System.out.println();
-if (divert == 1){
+if (divert == "1"){
   System.out.println("NO SIM TO MOVE FURTHER !!!!!!!");
    }
-if (divert == 2 ){
+if (divert == "2" ){
    System.out.println("EMPTY SIM CASE");
    }
-if (divert == 3){
+if (divert == "3"){
    System.out.println("NO SIM FOUND ");
    }
-if (divert == 4){
+if (divert == "4"){
    System.out.println("NO SIM FOUND");
    }
-if (divert == 5){
+if (divert == "5"){
    System.out.println("EMPTY DIVERT !!!!!!");
    }
-if (divert >= 6){
+if (divert >=  "6"){
    System.out.println("OPTION NOT FOUND");
    }
 }
@@ -609,7 +609,7 @@ if (divert >= 6){
 
 //CASE SEVEN START
 switch (option){
-         case 7-> {
+         case "7"-> {
 boolean settingsLoop = true;
 while (settingsLoop && running) {
 String settings ="""
@@ -641,7 +641,7 @@ if (devicesettings == 00) {
 }
 
 switch (devicesettings){
-        case 1 -> {
+        case "1" -> {
 boolean callSettingsLoop = true;
 while (callSettingsLoop && running) {
 String callssettings  ="""
@@ -665,16 +665,16 @@ if (settinginput == 0) {
 }
 
   System.out.println();
-if (settinginput == 1){
+if (settinginput == "1"){
   System.out.println("AUTOMATIC REDIAL ACTIVATED !!!!!!!");
    }
-if (settinginput == 2 ){
+if (settinginput == "2" ){
    System.out.println("EMPTY CALL TAKEN");
    }
-if (settinginput == 3){
+if (settinginput == "3"){
    System.out.println("SPEED DIALING ACTIVATED");
    }
-if (settinginput >= 4){
+if (settinginput >=  "4"){
    System.out.println("NO SIM FOUND");
    }
 }
@@ -707,7 +707,7 @@ if (settingin == 0) {
     break;
 }
  
- if (settingin == 1){
+ if (settingin == "1"){
   System.out.println();
   System.out.println("""
             LANGUAGE OPTIONS
@@ -727,33 +727,33 @@ if (settingin == 0) {
    int language = input.nextInt();
  
       System.out.println();
-      if (language  == 1){
+      if (language  == "1"){
        System.out.println("LANGUAGE CHANGED TO ENGLISH !!!!!!!");
         }
-    if (language == 2 ){
+    if (language == "2" ){
        System.out.println("LANGUAGE CHANGED TO ARABIC");
        }
-    if (language == 3){
+    if (language == "3"){
        System.out.println("LANGUAGE CHANGED TO SPANISH");
        }
-    if (language  == 4){
+    if (language  == "4"){
        System.out.println("LANGUAGE CHANGED TO JAPANESE");
        }
-    if (language  == 5){
+    if (language  == "5"){
        System.out.println("LANGUAGE CHANGED TO CHINESE");
        }
-    if (language  >= 6){
+    if (language  >=  "6"){
        System.out.println("OPTION NOT FOUND");
        }
 }      
    
    
-if (settingin  == 2){
+if (settingin  == "2"){
   System.out.println();
   System.out.println("NO SIM FOUND YET. INSERT A SIM");
    }   
    
-if (settingin  == 3){
+if (settingin  == "3"){
   System.out.println();
   System.out.println("""
              NETWORK  SELECTION
@@ -766,7 +766,7 @@ DEFAULT : [NONE]
   
 """);
    }      
-if (settingin  == 4){
+if (settingin  == "4"){
   System.out.println();
   System.out.println("""
 Welcome to Nokia 5510. It is actually the best phone
@@ -778,7 +778,7 @@ possible desires, pleasure , and imaginations
 Thank you for choosing this product !!!!!!.
 """);
 }
-if (settingin  >= 5){
+if (settingin  >=  "5"){
   System.out.println();
   System.out.println("OPTION NOT FOUND");
 }
@@ -790,7 +790,7 @@ if (settingin  >= 5){
 
 
 switch(devicesettings){
-          case 3 -> {
+          case "3" -> {
 String securitysettings="""
        SECURITY  SETTINGS
   
@@ -804,7 +804,7 @@ String securitysettings="""
 }
 
 switch (devicesettings){
-         case 4 -> {  
+         case "4" -> {  
 String restoresetting ="""
   
      RESETTING YOU PHONE !!!!!!!!!! 
@@ -822,7 +822,7 @@ String restoresetting ="""
 
 //START OF CASE EIGHT
 switch (option){
-    case 8 -> {
+    case "8" -> {
 String calculator ="""
  =========OPZZY BIT  CALCULATOR=======
 
@@ -899,7 +899,7 @@ switch (operator){
 
 //START OF CASE TEN
 switch (option){        
-       case 10 -> {
+       case "10" -> {
 boolean musicLoop = true;
 while (musicLoop && running) {
 String music = """
@@ -929,7 +929,7 @@ if (musictracks == 00) {
 }
 
 switch (musictracks){
-    case 1 -> {
+    case "1" -> {
 String recorder =""" 
   =====Recorder=====
         
@@ -939,7 +939,7 @@ String recorder ="""
 }
 }
 switch (musictracks){    
-    case 2 -> {
+    case "2" -> {
 String radio ="""
      ====Radio====
   
@@ -954,7 +954,7 @@ String radio ="""
 }
 
 switch (musictracks){    
-    case 3 -> {
+    case "3" -> {
 String tracklist ="""
   ===Track list===
 
@@ -972,7 +972,7 @@ String tracklist ="""
 
 //START OF CASE 9
 switch(option){
-      case 9 -> {
+      case "9" -> {
 boolean gameLoop = true;
 while (gameLoop && running) {
 String gamemenu ="""
@@ -1004,7 +1004,7 @@ if (game == 00) {
 }
 
 switch(game){
-     case 1 -> {
+     case "1" -> {
 String snakegame = """
 ============WELCOME TO SNAKE GAME======================       
           Select Game Level
@@ -1018,16 +1018,16 @@ String snakegame = """
   System.out.println(snakegame);
   System.out.println("Enter game level");
    int gamelevel = input.nextInt();
-if (gamelevel == 1){
+if (gamelevel == "1"){
   System.out.println("Easy mode,here we go !!!!!!!");
    }
-if (gamelevel == 2 ){
+if (gamelevel == "2" ){
    System.out.println("Normal mode, is getting interesting !!!!!!");
    }
-if (gamelevel == 3){
+if (gamelevel == "3"){
    System.out.println("Hard mode, you can do this  !!!!!!");
    }
-if (gamelevel >= 4){
+if (gamelevel >=  "4"){
    System.out.println("level not found !!!!!!");
    }
 }
@@ -1035,7 +1035,7 @@ if (gamelevel >= 4){
 
 
 switch(game){
-    case 2 -> {
+    case "2" -> {
 String bounceballgame = """ 
 ===========WELCOME TO BOUNCE BALL GAME================
         
@@ -1051,16 +1051,16 @@ String bounceballgame = """
    System.out.println(bounceballgame);
   System.out.println("Enter game level");
    int gamelevel = input.nextInt();
- if (gamelevel == 1){
+ if (gamelevel == "1"){
   System.out.println("it's just getting started !!!!!!!");
    }
-if (gamelevel == 2 ){
+if (gamelevel == "2" ){
    System.out.println("now it's getting interesting !!!!!!");
    }
-if (gamelevel == 3){
+if (gamelevel == "3"){
    System.out.println("Let see how far you can go  !!!!!!");
    } 
-if (gamelevel >= 4){
+if (gamelevel >=  "4"){
    System.out.println("hoops! level not found");
    }
 }
@@ -1069,7 +1069,7 @@ if (gamelevel >= 4){
 
 
 switch(game){   
-   case 3 -> {
+   case "3" -> {
 
 String quizgame1 = """ 
 ===============QUIZ TIME !!!!!!==================
@@ -1090,18 +1090,18 @@ Use number to answer the questions(1,2, or 3).
    System.out.println(quizgame1);
    System.out.println("Enter your answer ");
    int answer1 = input.nextInt();
-if (answer1 == 1){
+if (answer1 == "1"){
   System.out.println("Wrong !!,");
   System.out.println("Correct answer: 729");
    }
-if (answer1 == 2 ){
+if (answer1 == "2" ){
   System.out.println("Wrong !!,");
   System.out.println("Correct answer: 729");
    }
-if (answer1 == 3){
+if (answer1 == "3"){
    System.out.println("CORRECT !!!!!!");
    } 
-if (answer1 >= 4){
+if (answer1 >=  "4"){
    System.out.println("Option not found");
    }
 
@@ -1121,18 +1121,18 @@ String quizgame2= """
    System.out.println("Enter your answer ");
    int answer2 = input.nextInt();
 
-if (answer2 == 1){
+if (answer2 == "1"){
   System.out.println("Wrong !!,");
   System.out.println("Correct is answer: Treaty of Westphalia");
    }
-if (answer2 == 2 ){
+if (answer2 == "2" ){
    System.out.println("CORRECT !!!!!!");
    }
-if (answer2 == 3){
+if (answer2 == "3"){
   System.out.println("Wrong !!,");
   System.out.println("Correct is answer: Treaty of Westphalia");
    } 
-if (answer2 >= 4){
+if (answer2 >=  "4"){
    System.out.println("Option not found");
    }
 
@@ -1155,18 +1155,18 @@ What unique design feature defines the physical appearance of the Nokia 5510?
    System.out.println("Enter your answer ");
    int answer3 = input.nextInt();
 
-if (answer3 == 1){
+if (answer3 == "1"){
   System.out.println("Wrong !!,");
   System.out.println("Correct is answer: [2]");
    }
-if (answer3 == 2 ){
+if (answer3 == "2" ){
    System.out.println("CORRECT !!!!!!");
    }
-if (answer3 == 3){
+if (answer3 == "3"){
   System.out.println("Wrong !!,");
   System.out.println("Correct is answer: [2]");
    } 
-if (answer3 >= 4){
+if (answer3 >=  "4"){
    System.out.println("Option not found");
    }
 System.out.println();
@@ -1187,22 +1187,22 @@ Borrowed from the classic Nokia 3310, what is the screen resolution of the Nokia
    System.out.println("Enter your answer ");
    int answer4 = input.nextInt();
 
-if (answer4 == 1){
+if (answer4 == "1"){
   System.out.println("CORRECT !!!!!!");
    }
-if (answer4 == 2 ){
+if (answer4 == "2" ){
   System.out.println("Wrong !!,");
   System.out.println("Correct is answer: [1]");
    }
-if (answer4 == 3){
+if (answer4 == "3"){
   System.out.println("Wrong !!,");
   System.out.println("Correct is answer: [1]");
    } 
-if (answer4 == 4){
+if (answer4 == "4"){
   System.out.println("Wrong !!,");
   System.out.println("Correct is answer: [1]");
    }
-if (answer4 >= 5){
+if (answer4 >=  "5"){
    System.out.println("Option not found");
    }
 System.out.println();
@@ -1224,22 +1224,22 @@ String quizgame5="""
    System.out.println("Enter your answer ");
    int answer5 = input.nextInt();
 
-if (answer5 == 1){
+if (answer5 == "1"){
   System.out.println("Wrong !!,");
   System.out.println("Correct is answer: [2]");
    }
-if (answer5 == 2 ){
+if (answer5 == "2" ){
    System.out.println("CORRECT !!!!!!");
    }
-if (answer5 == 3){
+if (answer5 == "3"){
   System.out.println("Wrong !!,");
   System.out.println("Correct is answer: [2]");
    } 
-if (answer5 == 4){
+if (answer5 == "4"){
   System.out.println("Wrong !!,");
   System.out.println("Correct is answer: [2]");
    }
-if (answer5 >= 5){
+if (answer5 >=  "5"){
    System.out.println("Option not found");
    }
 }
@@ -1253,7 +1253,7 @@ if (answer5 >= 5){
 
 //START OF CASE 14
 switch (option){    
-     case 14 -> {
+     case "14" -> {
 boolean tonesLoop = true;
 while (tonesLoop && running) {
 String ringtones = """ 
@@ -1298,47 +1298,47 @@ if (ringtone == 00) {
     break;
 }
 
-if (ringtone == 1){
+if (ringtone == "1"){
      System.out.println("Rhythmic, blue inspired upbeat tune ");
      System.out.println("RINGING.....RINGING......RINGING.......");
     }
-if (ringtone == 2){
+if (ringtone == "2"){
      System.out.println("A festive holiday jingle");
      System.out.println("RINGING.....RINGING......RINGING.......");
     }
-if (ringtone == 3){
+if (ringtone == "3"){
      System.out.println("A rhythmic percussive tape pattern");
      System.out.println("RINGING.....RINGING......RINGING.......");
     }
-if (ringtone == 4){
+if (ringtone == "4"){
      System.out.println(" A standard telephone ring stimulation ");
      System.out.println("RINGING.....RINGING......RINGING.......");
     }
-if (ringtone == 5){
+if (ringtone == "5"){
      System.out.println("classic excerpt from Mozart symphony NO.40  ");
      System.out.println("RINGING.....RINGING......RINGING.......");
     }
-if (ringtone == 6){
+if (ringtone == "6"){
      System.out.println(" Rising pitch sound effect");
      System.out.println("RINGING.....RINGING......RINGING.......");
     }
-if (ringtone == 7){
+if (ringtone == "7"){
      System.out.println("A light cheerful chime like tone");
      System.out.println("RINGING.....RINGING......RINGING.......");
     }
-if (ringtone == 8){
+if (ringtone =="8"){
      System.out.println("A fast clock ticking alert");
      System.out.println("RINGING.....RINGING......RINGING.......");
     }
-if (ringtone == 9){
+if (ringtone =="9"){
      System.out.println("A smooth relaxing walking tempo tune");
      System.out.println("RINGING.....RINGING......RINGING.......");
     } 
-if (ringtone == 10){
+if (ringtone =="10"){
      System.out.println("A dramatic march melody from Carmel  ");
      System.out.println("RINGING.....RINGING......RINGING.......");
     }
-if (ringtone >= 11){
+if (ringtone >= "11"){
      System.out.println("option not found");
     }
 }
@@ -1352,7 +1352,7 @@ if (ringtone >= 11){
 
 //CASE 11 START
 switch (option){
-      case 11 -> {
+      case "11" -> {
 boolean clockLoop = true;
 while (clockLoop && running) {
 String clock = """
@@ -1384,7 +1384,7 @@ if (worldclock == 00) {
 }
 
 switch (worldclock){
-       case 1  -> {
+       case "1"  -> {
 String alarm =""" 
         ALARM
 
@@ -1396,7 +1396,7 @@ String alarm ="""
 }
 }
 switch (worldclock){
-      case 2  -> {
+      case "2"  -> {
 String clocksetting ="""
         CLOCK
       
@@ -1406,7 +1406,7 @@ String clocksetting ="""
 }
 }
 switch (worldclock){
-      case 3  -> {
+      case "3"  -> {
 String timer ="""
         TIMER
       
@@ -1430,7 +1430,7 @@ String timer ="""
 
 //START OF CASE 12
 switch (option){
-      case 12 -> {
+      case "12" -> {
 boolean reminderLoop = true;
 while (reminderLoop && running) {
 String  reminders = """
@@ -1462,7 +1462,7 @@ if (systemreminder == 00) {
 }
 
 switch(systemreminder){
-      case 1 -> {
+      case "1" -> {
 String addnew = """
         ADD NEW  
   
@@ -1474,7 +1474,7 @@ String addnew = """
 }   
 }
 switch(systemreminder){
-      case 2 -> {
+      case "2" -> {
 String erase ="""
       EMPTY  ADD NEW    
    
@@ -1485,7 +1485,7 @@ String erase ="""
    }
    }
 switch(systemreminder){
-      case 3 -> {
+      case "3" -> {
 String viewedit ="""
       
    NO EXISTING REMINDER 
@@ -1497,7 +1497,7 @@ String viewedit ="""
   }
    } 
 switch(systemreminder){
-      case 4 -> {
+      case "4" -> {
 boolean editToneLoop = true;
 while (editToneLoop && running) {
 String edittone ="""
@@ -1536,47 +1536,47 @@ if (editringtone == 0) {
 }
 
 System.out.println();
-if (editringtone == 1){
+if (editringtone == "1"){
      System.out.println("Rhythmic, blue inspired upbeat tune ");
      System.out.println("RINGING.....RINGING......RINGING.......");
     }
-if (editringtone == 2){
+if (editringtone == "2"){
      System.out.println("A festive holiday jingle");
      System.out.println("RINGING.....RINGING......RINGING.......");
     }
-if (editringtone == 3){
+if (editringtone == "3"){
      System.out.println("A rhythmic percussive tape pattern");
      System.out.println("RINGING.....RINGING......RINGING.......");
     }
-if (editringtone == 4){
+if (editringtone == "4"){
      System.out.println(" A standard telephone ring stimulation ");
      System.out.println("RINGING.....RINGING......RINGING.......");
     }
-if (editringtone == 5){
+if (editringtone == "5"){
      System.out.println("classic excerpt from Mozart symphony NO.40  ");
      System.out.println("RINGING.....RINGING......RINGING.......");
     }
-if (editringtone == 6){
+if (editringtone == "6"){
      System.out.println(" Rising pitch sound effect");
      System.out.println("RINGING.....RINGING......RINGING.......");
     }
-if (editringtone == 7){
+if (editringtone == "7"){
      System.out.println("A light cheerful chime like tone");
      System.out.println("RINGING.....RINGING......RINGING.......");
     }   
-if (editringtone == 8){
+if (editringtone =="8"){
      System.out.println("A fast clock ticking alert");
      System.out.println("RINGING.....RINGING......RINGING.......");
     }
-if (editringtone == 9){
+if (editringtone =="9"){
      System.out.println("A smooth relaxing walking tempo tune");
      System.out.println("RINGING.....RINGING......RINGING.......");
     } 
-if (editringtone == 10){
+if (editringtone =="10"){
      System.out.println("A dramatic march melody from Carmel  ");
      System.out.println("RINGING.....RINGING......RINGING.......");
     }
-if (editringtone >= 11){
+if (editringtone >= "11"){
      System.out.println("option not found");
     }  
  }
@@ -1591,7 +1591,7 @@ if (editringtone >= 11){
 
 //START CASE 13
 switch (option){
-      case 13 -> {
+      case "13" -> {
 String  simService ="""
  =====SIM SERVICE=====  
 
@@ -1607,7 +1607,7 @@ INSERT  YOUR  SIM
 
 //START OF CASE 15
 switch (option){
-      case 15 -> {
+      case "15" -> {
 String  service = """
       SERVICE
 """; 
