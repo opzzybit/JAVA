@@ -7,7 +7,7 @@ import java.util.Scanner;
   
      char[][]  board = {{'1','2','3'},
                         {'6','5','4'} ,  
-                       {'7','8','9'}};
+                        {'7','8','9'}};
 
 System.out.println("WELCOME  TO THE GAME TIC TAC TOE  ");
   
@@ -22,10 +22,12 @@ String mainBoard ="""
 """; 
    System.out.print(mainBoard); 
 
-for (int row = 0; row < board.length; row ++){
+while(true){
+for (int row = 0; row < board.length-1; row ++){
     for (int columns = row ; columns < board[row].length; columns ++){
        System.out.println ("player one you are [X] "); 
-       System.out.println ("Enter number :");
+       System.out.println ("Enter number 1-9 :");
+        
        char userinput = input.next().charAt(0);
         if (userinput == '1'){
             board[0][0]= 'X';
@@ -45,7 +47,7 @@ for (int row = 0; row < board.length; row ++){
         else if (userinput == '4'){
             board[1][2]= 'X';
         } 
-         if (userinput == '7'){
+        else if (userinput == '7'){
             board[2][0]= 'X';
         }
         else if (userinput == '8'){
@@ -54,11 +56,14 @@ for (int row = 0; row < board.length; row ++){
         else if (userinput == '9'){
             board[2][2]= 'X';
         } 
-     
+        else if(userinput != '9'){
+          System.out.println();
+          System.out.println("Enter the right digit ");
+        }
       
       System.out.println ();
       System.out.println ("player two you are [O]");    
-      System.out.println ("Enter number :");
+      System.out.println ("Enter number 1-9:");
        char userinput2 = input.next().charAt(0);
         if (userinput2 == '1'){
             board[0][0]= 'O';
@@ -88,18 +93,21 @@ for (int row = 0; row < board.length; row ++){
             board[2][2]= 'O';
         } 
     
-    
   
   System.out.println ();
   for (int rows = 0; rows < board.length; rows ++){
         for (int column = 0; column < board[rows].length; column ++){
             System.out.print(board[rows][column] + "\t" + "");    
-
+           
 }
     System.out.println("  " );       
 } 
 }
 }
+}
+
+
+
 }
 }
 

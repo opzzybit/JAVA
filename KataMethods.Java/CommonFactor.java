@@ -2,18 +2,18 @@ import java.util.Scanner;
 public class CommonFactor{
       
     public static int commonFactor(int number){
-        
-        int main_result = String.valueOf(0).length();
-        int count = 1;
-        for(int index = count; index <= number; index ++){
+     
+        int mainResult = 0;
+     
+        for(int index = 1; index <= number; index ++){
       
-                if (number % index == 0){
-                    System.out.println(index);    
-                    main_result += index;
+                if (number % index == 0){  
+                    mainResult = index;
                 }
+        
         } 
         System.out.println();
-        return main_result;
+        return mainResult;
     }  
     public  static void main(String [] args ){
       Scanner input = new Scanner (System.in);
