@@ -7,6 +7,13 @@ import java.util.Scanner;
    
    int calculation = integer1 / integer2; 
           return calculation;
+    if (integer2 == 0){
+      return 0;
+    }
+    else if(integer1 == 0){
+      return 0;
+    }
+
 }
     public static void main(String [] opzzy){
     
@@ -18,7 +25,7 @@ import java.util.Scanner;
     System.out.println("Enter second number :");
     int number2 = input.nextInt();
  
-    float result = division(number2, number1);
+    int  result = division(number1, number2);
  
     System.out.println("The answer is "  + result);
 

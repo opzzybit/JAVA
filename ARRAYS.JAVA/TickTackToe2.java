@@ -14,21 +14,18 @@ System.out.println("WELCOME  TO THE GAME TIC TAC TOE  ");
 System.out.println(); 
 String mainBoard ="""
 1     2     3
-
 6     5     4
-
 7     8     9
 
 """; 
    System.out.print(mainBoard); 
 
 while(true){
-for (int row = 0; row < board.length-1; row ++){
-    for (int columns = row ; columns < board[row].length; columns ++){
-       System.out.println ("player one you are [X] "); 
-       System.out.println ("Enter number 1-9 :");
-        
-       char userinput = input.next().charAt(0);
+//for (int row = 0; row < board.length-1; row ++){
+  //  for (int columns = row ; columns < board[row].length; columns ++){
+     System.out.println ("player one you are [X] "); 
+     System.out.println ("Enter number 1-9 :");
+        char userinput = input.next().charAt(0);
         if (userinput == '1'){
             board[0][0]= 'X';
         }
@@ -60,7 +57,17 @@ for (int row = 0; row < board.length-1; row ++){
           System.out.println();
           System.out.println("Enter the right digit ");
         }
+  //System.out.println ();
+  //for (int row = 0; row < board.length; row ++){
+    //    for (int columns = row + 1; columns < board.length; columns ++){
+      //      System.out.print(board[row][columns] + "\t" + "");        
+// }
+ //}
+ 
       
+  
+  
+  while(true){      
       System.out.println ();
       System.out.println ("player two you are [O]");    
       System.out.println ("Enter number 1-9:");
@@ -104,9 +111,6 @@ for (int row = 0; row < board.length-1; row ++){
 } 
 }
 }
-}
-
-
 
 }
 }

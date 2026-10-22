@@ -1,43 +1,29 @@
-public class Factorial {
-       
-       
- public static int  factorialNumber(int firstnumber , int secondnumber){
+import java.util.Scanner;
+public class Factorial  {
+          
+          public static void main(String [] args) {
+           
+              Scanner inputCollector = new Scanner (System.in );
+          
+              System.out.println("  FACTORIAL CALCULATOR");    
+             
+              System.out.println();
+              System.out.println("Enter any number: ");
+              int userInput = inputCollector.nextInt();
         
-        
-        int input2    = secondnumber;
-        int input1    = firstnumber;
-        int calculation = 1;  
-        int calculation2 = 1;
-        int calculation3 = 0;
-        int subtraction = input1 - input2;
-        int multiplication = 0;
-for (int index = 1 ; index <= firstnumber; index ++){
-             calculation *= index;
-}        
-for (int index2 = 1 ; index2 <= secondnumber ; index2 ++ ){
-                     calculation2 *= index2;
-}  
-for (int index3 = 1 ; index3 <= subtraction ; index3 ++ ){ 
-      
-      
-       calculation3 = subtraction * index3;
-       
-       multiplication = calculation3 * calculation2;
-       
-       
-}
-     return calculation / multiplication;
-      
+              int result =  factorial(userInput);
+    
+             System.out.println(result);
 
+          }
+
+        public static int factorial(int number) {
+            int result = 1;
+            for (int index = 1; index <= number; index ++ ){
+              result  *= index;
+            }
+            return result;
+        }
 }
 
-public  static void main(String [] args) {
- 
- int result = factorialNumber(5, 3);  
- System.out.println(result);
- }  
 
-
-
-}
-       
