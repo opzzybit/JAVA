@@ -57,12 +57,12 @@ while(true){
           System.out.println();
           System.out.println("Enter the right digit ");
         }
-  //System.out.println ();
-  //for (int row = 0; row < board.length; row ++){
-    //    for (int columns = row + 1; columns < board.length; columns ++){
-      //      System.out.print(board[row][columns] + "\t" + "");        
-// }
- //}
+  System.out.println ();
+  for (int row = 0; row < board.length; row ++){
+        for (int columns = 0; columns < board[row].length; columns ++){
+                
+ 
+ 
  
       
   
@@ -111,15 +111,10 @@ while(true){
 } 
 }
 }
-
 }
 }
-
-
-
-
-
-
+}
+}
 
 
 
