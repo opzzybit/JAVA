@@ -18,7 +18,7 @@ import java.util.Scanner;
    System.out.println();
 }    
  System.out.println("ARRAY OUTPUT");
-for (counter = 0;counter < 5; counter++){
+for (int counter = 0;counter < 5; counter++){
   
   System.out.println(array[counter]);
    
