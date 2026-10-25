@@ -25,6 +25,19 @@ public class AsciiArt{
         System.out.println("  ");
         }
     }
+    else if (userInput.equalsIgnoreCase("diamond")){
+        for(int row = 0;row < artWork.getDiamond().length;row ++){
+            for(int column = 0; column < artWork.getDiamond()[row].length; column ++){
+                System.out.print(artWork.getDiamond()[row][column]);
+            }
+        System.out.println("  ");
+        }
+    }
+   
+    
+    
+      
+      
     
     
     
