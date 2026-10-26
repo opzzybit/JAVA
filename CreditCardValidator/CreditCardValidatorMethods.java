@@ -32,15 +32,15 @@ public class CreditCardValidatorMethods{
         Scanner inputCollector = new Scanner(System.in);
         
         System.out.println("Enter Digit:");
-        String userInput = inputCollector.nextLine();
+        int userInput = inputCollector.nextLine();
         
-        for (String numbers : userInput){
+        for (int ){
             int converter = Integer.parseInt(numbers);
             cardNumber.add(converter);
         }
         
-        String typeConfirmation = getTypeOfCreditCard(ArrayList<Integer> cardNumber);
-        
+        String typeConfirmation = getTypeOfCreditCard(cardNumber);
+        int cardLength   =  getLengthOfCreditCard(cardNumber);
     
     
     
