@@ -9,18 +9,24 @@ import java.util.Scanner;
                         {'6','5','4'} ,  
                         {'7','8','9'}};
 
-System.out.println("WELCOME  TO THE GAME TIC TAC TOE  ");
-  
-System.out.println(); 
-String mainBoard ="""
-1     2     3
-6     5     4
-7     8     9
 
-"""; 
-   System.out.print(mainBoard); 
+for (int divider = 0; divider < 3; divider ++){
+     
+    
+    
+}
 
-while(true){
+
+
+
+
+for(int row = 0; row < board.length; row++){
+   for (int column = 0; column < board.length; column ++){
+        System.out.print(board[row][column]);
+   }
+   System.out.println("  " );       
+}
+
 //for (int row = 0; row < board.length-1; row ++){
   //  for (int columns = row ; columns < board[row].length; columns ++){
      System.out.println ("player one you are [X] "); 
@@ -63,11 +69,7 @@ while(true){
                 
  
  
- 
-      
-  
-  
-  while(true){      
+
       System.out.println ();
       System.out.println ("player two you are [O]");    
       System.out.println ("Enter number 1-9:");
@@ -109,7 +111,6 @@ while(true){
 }
     System.out.println("  " );       
 } 
-}
 }
 }
 }
